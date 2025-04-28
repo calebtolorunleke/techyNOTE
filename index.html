@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="h-screen flex flex-col">
+      <div class="frontPage mt-5 p-10 h-[30%]">
+        <h1 class="font-[1000] text-2xl">Notely</h1>
+        <p class="mt-5">
+          Capture what's on your mind & get a reminder later at the right place
+          or time. You can also add voice memo & other features.
+        </p>
+      </div>
+
+      <div
+        class="frontPage mt-5 p-10 bg-cover bg-center h-[70%]"
+        style="background-image: url(./newNote.jpg)"
+      >
+        <a
+          class="absolute bottom-10 right-4 button bg-blue-400 h-9 w-30 text-center rounded-3xl gap-2 text-white flex items-center justify-center"
+          href="./note.html"
+        >
+          <span class="start">Let's start</span>
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

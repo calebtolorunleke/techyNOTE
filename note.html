@@ -11,11 +11,11 @@
     />
   </head>
   <body class="m-0 p-0">
-    <div class="h-screen flex flex-col">
+    <div class=" flex flex-col">
       <div class="frontPage p-3 mx-2 flex flex-row justify-between">
         <h1 class="font-[1000] text-xl">My Notes</h1>
 
-        <img src="./newNote.jpg" alt="" class="w-10 h-8" />
+        <img src="./newNote.jpg" alt="" onclick="home()" class="w-10 h-8" />
       </div>
 
       <div class="mx-5 h-10 flex relative">
@@ -51,6 +51,58 @@
         <button class="bg-gray-400 p-1 px-2 rounded-lg h-8 w-50">Audio</button>
         <button class="bg-gray-400 p-1 px-2 rounded-lg h-8 w-50">Images</button>
       </div>
-    </div>
+
+      <div class="firstNote mx-5 mt-5 shadow shadow-gray-600">
+        <div class="firtNoteTag flex flex-row justify-start gap-7 m-3">
+          <img src="./bell.jpg" class="w-15 h-15 rounded-4xl" alt="" />
+          <div class="topic flex flex-col justify-between">
+            <h1 class="font-bold text-xl">Summer Vacation</h1>
+            <span>6 Aug 200, 07:49 PM</span>
+          </div>
+        </div>
+        <hr class="my-5 mx-3" />
+        <img src="./houses.webp" class="rounded-3xl p-4" alt="" />
+        <p class="p-4">
+          Then, having begun in a different way, let the speech proceed through
+          effort and along its path. Therefore, we ask: what is it? If it is
+          without a cause, what would soon be the cause?
+        </p>
+      </div>
+      
+
+      <div class="firstNote mx-5 mt-5 shadow shadow-gray-600">
+        <div class="firtNoteTag flex flex-row justify-start gap-7 m-3">
+          <img src="./sound.jpg" class="w-15 h-15 rounded-4xl" alt="" />
+          <audio src="../DrumKitAPP/sounds/snare.mp3"></audio>
+          <div class="topic flex flex-col justify-between">
+            <h1 class="font-bold text-xl">My violin class</h1>
+            <span>6 Aug 2020, 07:49 PM</span>
+          </div>
+        </div>
+        <hr class="my-5 mx-3" />
+        <audio controls class="w-full">
+            <source src="../DrumKitAPP/sounds/snare.mp3" type="audio/mp3" />
+          </audio>
+      </div>
+
+      <div class="firstNote mx-5 mt-5 mb-20 shadow shadow-gray-600">
+        <div class="firtNoteTag flex flex-row justify-start gap-7 m-3">
+          <img src="./sound.jpg" class="w-15 h-15 rounded-4xl" alt="" />
+          <audio src="../DrumKitAPP/sounds/snare.mp3"></audio>
+          <div class="topic flex flex-col justify-between">
+            <h1 class=" text-xl">Design System Collaboration</h1>
+            <span>6 Aug 2020, 07:49 PM</span>
+          </div>
+        </div>
+        <hr class="my-5 mx-3" />
+        <audio controls class="w-full">
+            <source src="../DrumKitAPP/sounds/snare.mp3" type="audio/mp3" />
+          </audio>
+      </div>
+
+
+      <button class="btn rounded-3xl bg-blue-700 w-25 h-10 text-white text-sm" 
+      style="position: fixed; bottom: 20px; right: 20px;" onclick=goNew()>+ Create</button>
   </body>
+  <script src="./app.js"></script>
 </html>
